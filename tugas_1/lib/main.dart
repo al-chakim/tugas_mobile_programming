@@ -32,11 +32,10 @@ class _MyAppState extends State<MyApp> {
                         color: Colors.white,
                       )
                     ),
-                    child: Material(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.transparent,
-                      child: InkWell(
-                        child: Text(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
                           'Hello Word',
                           style: TextStyle(
                             color: Colors.white,
@@ -44,7 +43,7 @@ class _MyAppState extends State<MyApp> {
                             fontWeight: FontWeight.w500
                           ),
                         ),
-                      ),
+                      ],
                     ),
                   )
                 ],
