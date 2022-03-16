@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xffDA70D6),
+        backgroundColor: const Color(0xffDA70D6),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Center(
@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           'Hello Word',
                           style: TextStyle(
