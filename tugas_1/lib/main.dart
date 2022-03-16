@@ -13,33 +13,38 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Color(0xffDA70D6),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Center(
               child: Column(
                 children: [
                   Container(
-                    padding: const EdgeInsets.all(30),
+                    padding: const EdgeInsets.all(25),
                     margin: const EdgeInsets.only(left: 17, right: 17, top: 300),
                     decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(20)
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Colors.white,
+                      )
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Text(
+                    child: Material(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.transparent,
+                      child: InkWell(
+                        child: Text(
                           'Hello Word',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 15,
                             fontWeight: FontWeight.w500
                           ),
-                        )
-                      ],
+                        ),
+                      ),
                     ),
                   )
                 ],
