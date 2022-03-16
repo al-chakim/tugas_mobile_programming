@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   Container(
                     padding: const EdgeInsets.all(25),
-                    margin: const EdgeInsets.only(left: 17, right: 17, top: 300),
+                    margin: const EdgeInsets.only(left: 17, right: 17, top: 330),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
@@ -39,8 +39,8 @@ class _MyAppState extends State<MyApp> {
                           'Hello Word',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w500
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700
                           ),
                         ),
                       ],
